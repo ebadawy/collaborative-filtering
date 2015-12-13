@@ -35,4 +35,4 @@ for i=1:size(NNs)(1)
   R(i) = dataSet(dataSet(:,1) == ua & dataSet(:,2) == NNs(i,1),3);
 end
 
-p = prediction(NNs, R)
+p = prediction(NNs(:,2), R)
