@@ -12,7 +12,7 @@ Iua = dataSet(dataSet(:,1) == ua, :);
 
 mu = mean(dataSet(:,3));
 bu = userBias(Utr, mu, dataSet);
-bi = itemBias(ua, Iua, mu, dataSet);
+bi = itemBias(Iua, mu, dataSet);
 
 for i=1:length(Utr)
   for j=1:size(Iua)(1)

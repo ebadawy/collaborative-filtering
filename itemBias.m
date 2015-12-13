@@ -1,4 +1,4 @@
-function bi = itemBias(ua, Iua, mu, dataSet)
+function bi = itemBias(Iua, mu, dataSet)
 
 bi = zeros(max(Iua),1);
 
